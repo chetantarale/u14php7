@@ -11,9 +11,9 @@ build:
   ci:
     # We can add sanity checks to ensure the image was built successfully here
     - currentLocation="$PWD"
-    - echo pwd
+    - echo $PWD
     - docker build -t="chetantarale/u14php7pls:tip1" .
-    - echo PWD
+    - echo $PWD
     - cd "$currentLocation"
     - /u14php7/tests/executor.sh
 
