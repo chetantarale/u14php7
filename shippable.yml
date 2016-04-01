@@ -10,10 +10,10 @@ build:
 
   ci:
     # We can add sanity checks to ensure the image was built successfully here
-    -  docker build -t="chetantarale/u14php7pls:testext1" .
+    -  docker build -t="chetantarale/u14php7pls:tip1" .
 
   on_success:
-    - docker push chetantarale/u14php7pls:testext1
+    - docker push chetantarale/u14php7pls:tip1
 
 
 integrations:
