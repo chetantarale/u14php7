@@ -15,7 +15,7 @@ build:
     - docker build -t="chetantarale/u14php7pls:tip1" .
     - echo $PWD
     - cd "$currentLocation"
-    - /u14php7/tests/executor.sh
+    - $currentLocation/tests/executor.sh
 
   on_success:
     - docker push chetantarale/u14php7pls:tip1
