@@ -11,6 +11,14 @@ build:
   ci:
     # We can add sanity checks to ensure the image was built successfully here
     -  docker build -t="chetantarale/u14php7pls:tip1" .
+    - /u14php7/test/_elasticsearch.sh
+    - /u14php7/test/_memcached.sh
+    - /u14php7/test/_mongo.sh
+    - /u14php7/test/_mysql.sh
+    - /u14php7/test/_postgres.sh
+    - /u14php7/test/_rabbitmq.sh
+    - /u14php7/test/_redis.sh
+    - /u14php7/test/_selenium.sh
 
   on_success:
     - docker push chetantarale/u14php7pls:tip1
