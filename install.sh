@@ -53,24 +53,14 @@ chmod +x composer.phar
 mv composer.phar usr/bin/composer
 
 
-#echo "================= Install pecl ==================="
-#sudo apt-get install php-pear
-#sudo apt-get install libcurl3-openssl-dev
-#sudo pecl install pecl_http
-
-#printf '\n' | pecl install memcache
-#printf '\n' | pecl install memcached
-#printf '\n' | pecl install mongodb
-#printf '\n' | pecl install amqp-1.6.0
-#printf '\n' | pecl install zmq-beta
-#printf '\n' | pecl install redis
-
+#echo "================= Install Extensions ==================="
 sudo apt-get install php-memcache
 sudo apt-get install php-memcached
 sudo apt-get install php-mongodb
 sudo apt-get install php-amqp
 sudo apt-get install php-redis
 sudo apt-get install php-zmq
+
 # Cleaning package lists
 echo "================= Cleaning package lists ==================="
 apt-get clean
